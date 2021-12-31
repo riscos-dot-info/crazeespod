@@ -12,7 +12,7 @@ LIBS=`sdl-config --libs` -lSDL_image -lSDL_ttf -lSDL_gfx -lSDL_mixer
 #'pkg-config --cflags librsvg-2.0' 'pkg-config --libs librsvg-2.0'
 
 BIN  = ./CrazeeSpod
-CFLAGS= -Wall  -DLGFX
+CFLAGS= -Wall
 
 
 RM = rm -f
