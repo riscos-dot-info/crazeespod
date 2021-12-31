@@ -26,7 +26,7 @@ clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
-	$(CC) -static $(LINKOBJ) -o "./CrazeeSpod" $(LIBS) -lpng -ljpeg -lfreetype -lvorbisidec -lz
+	$(CC) -static $(LINKOBJ) -o "./CrazeeSpod" $(LIBS) -lpng -ljpeg -lfreetype -lbz2 -lvorbisidec -lz -logg -lFLAC -ltiff -llzma -lmikmod -lwebp
 
 
 src/images.o: src/images.c
